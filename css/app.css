@@ -48,3 +48,45 @@ header{
 .view-wrapper .view-name{
     width: 100px;
 }
+
+.view-wrapper .name-song{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.view-wrapper .name-author{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.view-wrapper .fa-heart{
+    color: #20BD5A;
+}
+
+.play-wrapper{
+    align-items: center;
+    width: 525px;
+    background-color: lightgreen;
+}
+
+.play-wrapper .fa-play-circle{
+    font-size: 40px;
+}
+
+.play-wrapper .play-bar{
+    align-items: center;
+}
+
+.play-wrapper .step-track{
+    align-items: center;
+}
+
+
+
+
+
+.track-bar {
+    width: 428px;
+    height: 4px;
+    background-color: salmon;
+}
