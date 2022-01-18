@@ -25,7 +25,6 @@ img{
 
 
 
-
 /* ********** H E A D E R ********* */
 header{
     align-items: center;
@@ -33,11 +32,24 @@ header{
     padding: 0 11px;
     height: 90px;
     background-color: lightblue;
+    font-size: 11px;
+    color: #b3b3b3;
+    background-color: #282828;
+    gap: 18px;
 }
 
+header i{
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+
+/* V I E W - S O N G */
 .view-wrapper{
     align-items: center;
     column-gap: 13px;
+    width: 210px;
+    justify-content: space-between;
 }
 
 .view-wrapper img{
@@ -46,47 +58,98 @@ header{
 }
 
 .view-wrapper .view-name{
-    width: 100px;
+    flex-grow: 1;
 }
 
 .view-wrapper .name-song{
     font-size: 14px;
     font-weight: 700;
+    color: white;
 }
 
 .view-wrapper .name-author{
-    font-size: 11px;
     font-weight: 500;
+    color: #b3b3b3;
 }
 
 .view-wrapper .fa-heart{
     color: #20BD5A;
 }
 
+
+/* P L A Y - B A R */
 .play-wrapper{
     align-items: center;
-    width: 525px;
-    background-color: lightgreen;
+    width: 40%;
 }
 
+
 .play-wrapper .fa-play-circle{
-    font-size: 40px;
+    font-size: 28px;
+    padding: 0 10px;
+    color: white;
 }
 
 .play-wrapper .play-bar{
     align-items: center;
+    margin-bottom: 13px;
+    column-gap: 20px;
+}
+
+.play-bar i{
+    color: #b3b3b3;
+    font-size: 15px;
 }
 
 .play-wrapper .step-track{
+    width: 100%;
     align-items: center;
+    column-gap: 25px;
+    justify-content: space-between;
 }
 
 
-
-
+/* B A R - S T Y L E */
 
 .track-bar {
-    width: 428px;
     height: 4px;
-    background-color: salmon;
+    background-color: #535353;
+    border-radius: 999px;
+    flex-grow: 1;
+}
+
+.progress-bar{
+    height: 4px;
+    border-radius: 999px;
+    background-color: #b3b3b3;
+    position: relative;
+}
+
+.progress-bar:hover{
+    background-color: #20BD5A;
+}
+
+.progress-bar:hover::after{
+    content: '';
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+
+/* V O L U M E */
+.volume-wrapper {
+    align-items: center;
+    gap: 15px;
+    width: 210px;
+}
+
+.volume-wrapper .livel_vol{
+    width: 40%;
 }
