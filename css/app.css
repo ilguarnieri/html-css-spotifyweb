@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* ********** H E A D E R ********* */
+header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 11px;
+    height: 90px;
+    background-color: lightblue;
+}
+
+.view-wrapper{
+    align-items: center;
+    column-gap: 13px;
+}
+
+.view-wrapper img{
+    width: 42px;
+    height: 42px;
+}
+
+.view-wrapper .view-name{
+    width: 100px;
+}
