@@ -43,6 +43,10 @@ header i{
     font-size: 14px;
 }
 
+header i:hover{
+    color: white;
+}
+
 
 /* V I E W - S O N G */
 .view-wrapper{
@@ -72,6 +76,11 @@ header i{
     color: #b3b3b3;
 }
 
+.name-song:hover, .name-author:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 .view-wrapper .fa-heart{
     color: #20BD5A;
 }
@@ -88,6 +97,10 @@ header i{
     font-size: 28px;
     padding: 0 10px;
     color: white;
+}
+
+.fa-play-circle:hover{
+    transform: scale(1.4);
 }
 
 .play-wrapper .play-bar{
@@ -132,14 +145,31 @@ header i{
 .progress-bar:hover::after{
     content: '';
     display: block;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
+}
+
+
+/* A N I M A T I O N - B A R */
+.song_bar.progress-bar{
+    width: 0%;
+    animation: track_anim 276s linear;
+}
+
+
+@keyframes track_anim {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
 
 
