@@ -17,41 +17,66 @@
 
         <header class="flex">
 
-            <!-- VIEW SONG -->
-            <div class="view-wrapper flex">
-                <!-- IMG -->
-                <img src="img/theblaze.jfif" alt="song_play">
-                 <!-- NAME BAR -->
-                <div class="view-name">
-                    <!-- NAME TRACK -->
-                    <div class="name-song">
-                        Territory
+            <!-- MUSIC SONG -->
+            <div class="music-box flex">
+
+                <div class="music-album flex">
+                    <!-- IMG -->
+                    <img src="img/theblaze.jfif" alt="song_play">
+                    <!-- NAME -->
+                    <div class="music__info">
+                        <!-- NAME TRACK -->
+                        <div class="name-song">
+                         Territory
+                        </div>
+                        <!-- Artist -->
+                        <div class="name-author">
+                         The Blaze dsgg sgsdg ds 
+                        </div>                    
                     </div>
-                    <!-- Artist -->
-                    <div class="name-author">
-                        The Blaze
-                    </div>                    
                 </div>
+
                 <!-- LIKE -->
-                <div class="view-like">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <!-- ADD PLAYLIST -->
-                <div class="view-playlist">
-                    <i class="far fa-folder"></i>
+                <div class="music-like flex">
+                    <div>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div>
+                        <i class="far fa-folder"></i>
+                    </div>
                 </div>
             </div>
 
             <!-- PLAY BAR -->
             <div class="play-wrapper flex-col">
                 <!-- PLAY BUTTON -->
-                <div class="play-bar flex">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i class="far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo-alt"></i>
-                </div>
+                <ul class="play-bar flex">
+                    <li class="btn-random">
+                        <a href="#">
+                            <i class="fas fa-random"></i>
+                        </a>
+                    </li>
+                    <li class="btn-back">
+                        <a href="#">
+                            <i class="fas fa-step-backward"></i>
+                        </a>
+                    </li>
+                    <li class="btn-play">
+                        <a href="#">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                    </li>
+                    <li class="btn-next">
+                        <a href="#">
+                            <i class="fas fa-step-forward"></i>
+                        </a>
+                    </li>
+                    <li class="btn-repeat">
+                        <a href="#">
+                            <i class="fas fa-redo-alt"></i>
+                        </a>
+                    </li>                    
+                </ul>
 
                 <!-- STEP TRACK -->
                 <div class="step-track flex">
@@ -74,113 +99,218 @@
             </div>
 
             <!-- VOLUME -->
-            <div class="volume-wrapper flex">
-                <!-- ICON -->
-                <i class="fas fa-list"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
 
-                <!-- VOLUME BAR -->
-                <div class="track-bar">
+            <ul class="volume-wrapper flex">
+                <li class="list-btn">
+                    <a href="#">
+                        <i class="fas fa-list"></i>
+                    </a>
+                </li>
+                <li class="desktop-btn">
+                    <a href="#">
+                        <i class="fas fa-list"></i>
+                    </a>
+                </li>
+                <li class="volume-btn">
+                    <a href="#">
+                        <i class="fas fa-volume-up"></i>
+                    </a>
+                </li>
+                <li class="track-bar">
                     <div class="progress-bar livel_vol">
-                    </div>
-                </div>         
-            </div> 
+                    </div>                    
+                </li>
+            </ul>
+
+
+
+
+      
+          
         </header>
 
         <main class="flex">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- SIDEBAR -->
-            <aside class="sidebar">
+            <aside class="sidebar flex-col">
 
                 <!-- LOGO -->
                 <div class="logo">
-                    <img src="img/logo.svg" class="logo-big" alt="logo">
-                    <img src="img/logo-small.svg" class="logo-small" alt="logo">
+                    <a href="">
+                        <img src="img/logo.svg" class="logo-big" alt="logo">
+                        <img src="img/logo-small.svg" class="logo-small" alt="logo">
+                    </a>
                 </div>
 
                 <ul class="main-bar" >
                     <!-- HOME -->
-                    <li class="flex active">
-                        <img src="img/home.svg" alt="home">
-                        <p>Home</p>
+                    <li class="main__item flex active">
+                        <a href="#">
+                            <img src="img/home.svg" alt="home">
+                            Home
+                        </a>
                     </li>
                     <!-- SEARCH -->
-                    <li class="flex">
-                        <img src="img/search.svg" alt="search">
-                        <p>Cerca</p>
+                    <li class="main__item flex">
+                        <a href="#">
+                            <img src="img/search.svg" alt="search">
+                            Cerca
+                        </a>
                     </li>
                     <!-- LIBRARY -->
-                    <li class="flex">
-                        <img src="img/libreria.svg" alt="library">
-                        <p>La tua libreria</p>
+                    <li class="main__item flex">
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="library">
+                            La tua libreria
+                        </a>
                     </li>
                 </ul>
 
 
 
-                <!-- PLAYLIST -->
-                <div class="playlist">
-                    <h3>Playlist</h3>                    
-                    <ul>
-                        <li class="create-play flex">
-                            <i class="fas fa-plus-square"></i>
-                            <p>Crea Playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        <li>
-                            <p>Nuova playlist</p>
-                        </li>
-                        
-                    </ul>
 
+
+
+
+
+
+
+
+
+
+
+                <!-- PLAYLIST -->
+                <div class="playlist-wrapper flex-col">
+                    <h3>Playlist</h3>
+
+                    <div class="new-playlist-btn flex">
+                        <i class="fas fa-plus-square"></i>
+                        Crea Playlist
+                    </div>
+
+                    <ul class="playlist-list">
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Nuova playlist        
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <!-- USER -->
                 <div class="user-side">
                     <!-- DOWNLOAD -->
-                    <div class="download-app flex">
+                    <button class="download-cta flex">
                         <img src="img/download.svg" alt="download">
-                        <p>Installa app</p>
-                    </div>
+                        Installa app
+                    </button>
 
                     <!-- USER -->
-                    <div class="user-info line flex">
-                        <img src="img/user.jpeg" alt="user">
-                        <p>Angelo Guarnieri</p>
+                    <div class="profile line flex">
+                        <figure class="profile-icon">
+                            <img src="img/user.jpeg" alt="user">
+                        </figure>
+
+                        Angelo Guarnieri
                     </div>
                     
+                </div>
+            </aside>
+
+
+
+
+            <!-- MAIN CONTENT -->
+            <section class="main-content flex-col">
+
+                <div class="upgrade-banner flex">
+                    <button class="upgrade-btn">
+                        Effettua l'upgrade
+                    </button>
+
                 </div>
 
 
 
 
 
-            </aside>
+
+                <div class="content">
+
+                    music
+
+                </div>
 
 
 
 
 
-            <section>
+
+
+
+
+
+
+
+
+
               
 
 
