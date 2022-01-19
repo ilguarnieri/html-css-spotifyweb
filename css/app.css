@@ -31,6 +31,28 @@ ul{
     list-style: none;
 }
 
+.view-wrapper>div,
+.play-bar>i,
+.volume-wrapper>i,
+.track-bar:hover,
+.user-info, .logo{
+    cursor: pointer;
+}
+
+
+
+
+
+/* ********** S C R O L L - B A R ********* */
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    visibility: visible;
+    background: #535353;
+}
+
 
 
 
@@ -47,6 +69,7 @@ header{
     color: #b3b3b3;
     background-color: #282828;
     gap: 18px;
+    flex-shrink: 0;
 }
 
 header i{
@@ -201,7 +224,7 @@ header i:hover{
 
 
 
-/* M A I N */
+/* ********** M A I N ********* */
 main{
     flex-grow: 1;
     background-color: rgb(21, 15, 49);
@@ -226,7 +249,7 @@ main{
     margin-bottom: 30px;
 }
 
-.playlist li{
+.main-bar li{
     align-items: center;
     font-weight: 700;
     font-size: 13px;
@@ -237,28 +260,132 @@ main{
     position:relative;
 }
 
-.playlist li img{
+.main-bar li img{
     width: 25px;
     margin-left: 20px;
 }
 
-.playlist li.active{
+.main-bar li.active{
     background-color: #282828;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     opacity: 1;
 }
 
-.playlist li:hover{
+.main-bar li:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
-.playlist .active::before{
+.main-bar .active::before{
     position: absolute;
     content: '';
     display: block;
     background-color: #20BD5A;
     width: 3px;
     height: 36px;
+}
 
+
+/* P L A Y L I S T */
+.playlist{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.playlist h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.playlist .create-play{
+    align-items: center;
+    column-gap: 13px;
+}
+
+.playlist .create-play i{
+    font-size: 40px;
+}
+
+.playlist li p{
+    font-size: 12px;
+}
+
+.playlist .create-play p{
+    font-size: 15px;
+}
+
+.playlist li{
+    margin-bottom: 20px;
+}
+
+.playlist li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.playlist{
+    height: calc(100vh - 395px);
+    overflow: auto;
+}
+
+.logo, .main-bar{
+    overflow: hidden;
+}
+
+main{
+    overflow: hidden;
+}
+
+
+/* U S E R */
+.user-side{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.download-app{
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    column-gap: 10px;
+    opacity: 0.7;
+    transition: all 200ms linear;
+    margin-bottom: 12px;
+}
+
+.download-app:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.download-app img{
+    width: 20px;
+}
+
+.user-info{
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.user-info img{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px
+}
+
+.line::before{
+    content: '';
+    display: block;
+    background-color:#535353;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 12px;
 }
