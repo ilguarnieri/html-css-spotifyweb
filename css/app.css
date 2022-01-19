@@ -283,6 +283,7 @@ main{
     color: white;
     font-weight: 700;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .sidebar .logo-small{
@@ -390,7 +391,9 @@ main{
 
 /* U S E R */
 .user-side{
-    color: white;}
+    color: white;
+    display: none;
+}
 
 .download-app{
     align-items: center;}
@@ -439,6 +442,7 @@ main{
     flex-grow: 1;
 }
 
+/* U P G R A D E */
 .upgrade-banner{
     flex-basis: 90px;
     justify-content: flex-end;
@@ -453,11 +457,45 @@ main{
     background-color: transparent;
     border-color: white;
     border-radius: 999px;
-    padding: 15px 40px;
+    padding: 12px 40px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
-.content{
+.music-content{
     background-color: #141922;
     flex-grow: 1;
+    padding: 20px;
+}
+
+/* N A V - B A R */
+.nav-bar{
+    justify-content: center;
+    gap: 40px 20px;
+    color: #77797d;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.nav-active{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-active::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 40%;
+    margin-top: 3px;
+    background-color: #ADFF2F;
+}
+
+.nav-bar li:hover{
+    color: white;
 }
