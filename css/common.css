@@ -65,6 +65,7 @@ a{
     font-weight: 700;
     font-size: 13px;
     overflow: hidden;
+    z-index: 10;
 }
 
 .logo-wrapper{

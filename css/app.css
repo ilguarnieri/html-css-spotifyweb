@@ -150,7 +150,9 @@
 
 @media screen and (max-width: 500px){
 
-    .track__author,
+    .btn-random,
+    .btn-repeat,
+    .album__thumb,
     .music-folder,
     .music-heart,
     .desktop-btn,
@@ -158,8 +160,20 @@
         display: none;
     }
 
+    .toolbar{
+        justify-content: space-evenly;
+    }
+
     .music-album{
         flex-direction: column;
+    }
+
+    .track__title{
+        font-size: 12px;
+    }
+    
+    .track__author{
+        font-size: 10px;
     }
 
     .music-box{
@@ -170,4 +184,5 @@
     .volume-wrapper {
         flex-basis: 100px;
     }
+    
 }
