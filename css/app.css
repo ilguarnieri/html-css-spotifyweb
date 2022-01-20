@@ -259,6 +259,8 @@ button{
     background-color: #141922;
     flex-grow: 1;
     padding: 20px;
+    padding-bottom: 40px;
+    overflow-y: auto;
 }
 
 /* N A V - B A R */
@@ -308,56 +310,86 @@ button{
     font-size: 26px;
 }
 
+.catalog__subtitle{
+    padding-top: 10px;
+    color: #7d7f84;
+    font-size: 15px;
+}
+
 .catolog__list{
     margin-top: 30px;
-    width: 100%;
     gap: 13px 15px;
 }
 
 .card-wrapper{
-    width: 23%;
+    width: 15%;
     font-weight:700;
     text-align: center;
 }
 
 .card-img{
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img{
+    display: block;
+}
+
+.circle-img{
+    border-radius: 50%;    
 }
 
 .card__title{
     font-size: 18px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card__title:hover{
+    text-decoration: underline;
 }
 
 .card__subtitle{
     font-size: 14px;
     color: #7d7f84;
+    cursor: pointer;
 }
 
+.card__subtitle:hover{
+    color: white;
+    text-decoration: underline;
+}
 
+.card-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    background-color: rgba(0,0,0,0.5);
+    animation: play_music 1s linear infinite;
+    opacity: 0;
+}
 
+@keyframes play_music{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card-img:hover .card-overlay{
+    opacity: 1;
+    cursor: pointer;
+}
 
 
 /* ********** T O O L B A R ********* */
