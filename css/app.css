@@ -301,12 +301,12 @@ button{
 
 
 /* C A T A L O G */
-.catolog-wrapper{
+.catalog-wrapper{
     flex-basis: 200px;
     margin-top: 40px;
 }
 
-.catolog__title{
+.catalog__title{
     font-size: 26px;
 }
 
@@ -316,9 +316,14 @@ button{
     font-size: 15px;
 }
 
-.catolog__list{
+.catalog__list{
     margin-top: 30px;
     gap: 13px 15px;
+    justify-content: space-between;
+}
+
+.catalog__create .catalog__list, .catalog__artist .catalog__list{
+    justify-content: flex-start;
 }
 
 .card-wrapper{
@@ -342,7 +347,7 @@ button{
 }
 
 .card__title{
-    font-size: 18px;
+    font-size: calc(1vw + 2px);
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -352,7 +357,7 @@ button{
 }
 
 .card__subtitle{
-    font-size: 14px;
+    font-size: calc(0.8vw + 1px);
     color: #7d7f84;
     cursor: pointer;
 }
