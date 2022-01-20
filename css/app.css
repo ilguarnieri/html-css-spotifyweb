@@ -1,3 +1,31 @@
+
+
+
+/****** B O N U S ******/
+
+
+/* .catalog__list{    
+    width:1440px !important;
+    overflow-x: scroll !important;
+}
+
+.catalog__list{
+    column-gap: 1% !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important; 
+}
+.card-wrapper{
+    width: calc(95% / 6) !important;
+} */
+
+
+/****** B O N U S - F I N E ******/
+
+
+
+
+
+
 @media screen and (max-height: 710px){
 
     .download-cta{
@@ -150,19 +178,16 @@
 
 @media screen and (max-width: 500px){
 
-    .btn-random,
-    .btn-repeat,
     .album__thumb,
     .music-folder,
     .music-heart,
-    .desktop-btn,
-    .list-btn{
+    .volume-wrapper .track-bar{
         display: none;
     }
 
-    .toolbar{
-        justify-content: space-evenly;
-    }
+    .play-wrapper{
+        flex-grow: 1;
+    }    
 
     .music-album{
         flex-direction: column;
@@ -182,7 +207,100 @@
     }
 
     .volume-wrapper {
-        flex-basis: 100px;
+        flex-basis: 77px;
+        justify-content: flex-end;
     }
     
+}
+
+@media screen and (max-width: 406px) {
+
+    .btn-repeat,
+    .btn-random,
+    .desktop-btn,
+    .nav-bar>li,
+    .download-cta,
+    .home__desktop,
+    .main__search,
+    .main__library,
+    .upgrade-banner{
+        display: none;
+    }
+
+    .logo-wrapper{
+        order: 1;
+    }
+
+    .profile{
+        padding: 0;
+        order: 2;
+    }
+    
+    .nav-bar{
+        padding-top: 20px;
+    }
+
+    .nav-bar .nav-active{
+        display: flex;
+    }
+
+    .music-wrapper{
+        padding-bottom: 20px;
+    }
+
+    .catalog__list{
+        column-gap: 0;
+        row-gap: 20px;
+    }
+    .card-wrapper{
+        width: 100%;
+    }
+    
+    .card__title{
+        font-size: 4vw;
+    }
+
+    .card__subtitle{
+        font-size: 3vw;
+    }
+
+    .home__mobile{
+        display: flex;
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    .toolbar{
+        flex-wrap: wrap;        
+    }
+
+    .play-wrapper, .main-bar{
+        display: contents;
+    }
+
+    .play-wrapper .play-bar{
+        margin-bottom: 0px;
+    }
+
+    .step-track{
+        order: 1;
+        padding: 0 20px 10px 20px;
+    }
+
+    .main-wrapper{
+        flex-direction: column;
+    }
+
+    .sidebar-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: auto;
+        padding: 0 10px;
+    }
+
+    .catalog-wrapper{
+        padding-right: 42px;
+        padding-left: 50px;
+    }
+
 }

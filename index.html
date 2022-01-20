@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/app.css">       
         <link rel="icon" href="img/favicon.ico">
         <title>Spotify</title>
     </head>
@@ -32,21 +32,27 @@
                 <!-- MAIN BAR -->                
                 <ul class="main-bar" >
                     <!-- HOME -->
-                    <li class="main__item flex active">
+                    <li class="main__item flex home__desktop active">
                         <a href="#">
                             <img src="img/home.svg" alt="home">
                             <p class="main__item__name">Home</p>
                         </a>
                     </li>
+                    <!-- HOME Mobile-->
+                    <li class="main__item home__mobile">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
                     <!-- SEARCH -->
-                    <li class="main__item flex">
+                    <li class="main__item flex main__search">
                         <a href="#">
                             <img src="img/search.svg" alt="search">
                             <p class="main__item__name">Cerca</p>
                         </a>
                     </li>
                     <!-- LIBRARY -->
-                    <li class="main__item flex">
+                    <li class="main__item flex main__library">
                         <a href="#">
                             <img src="img/libreria.svg" alt="library">
                             <p class="main__item__name">La tua libreria</p>
