@@ -5,6 +5,7 @@
     }
 }
 
+
 @media screen and (max-height: 704px){
 
     .download-cta{
@@ -16,5 +17,157 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+
+    .catalog__list{
+        column-gap: 1%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card-wrapper{
+        width: calc(96% / 5);
+    }
+}
 
 
+@media screen and (max-width: 992px) {
+
+    .catalog__list{
+        column-gap: 2%;
+    }
+    .card-wrapper{
+        width: calc(94% / 4);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .catalog__list{
+        column-gap: 4%;
+    }
+    .card-wrapper{
+        width: calc(96% / 2);
+    }
+
+    .toolbar{
+        gap: 0;
+    }
+
+    .volume-wrapper {
+        flex-basis: 150px;
+        gap: 8px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 590px) {
+
+    .logo-big,
+    .main__item__name,
+    .playlist-wrapper,
+    .download-cta__name,
+    .profile__name,
+    .main-bar .active::before,
+    .profile::before {
+        display: none;
+    }  
+
+    .sidebar-menu{
+        flex-basis: 50px;
+        align-items: center;
+    }
+
+    .main__item.active{
+        background-color: transparent;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    .logo-wrapper{
+        padding: 8px 0;
+    }
+
+    .logo-wrapper figure{
+        width: 28px;
+    }
+
+    .download-cta{
+        flex-grow: 1;
+        align-items: flex-end;
+    }
+
+    .upgrade-banner{
+        width: calc(100vw - 50px - 8px);
+    }
+
+    .album__thumb{
+        width: 28px;
+        height: 28px;
+    }
+
+    .music-album{
+        gap: 10px;
+    }
+
+    .main__item img{
+        margin-left: 0;
+    }
+
+    .profile, .download-cta{
+        padding: 10px 0;
+    }
+
+    .play-wrapper .step-track{
+        column-gap: 10px;
+    }
+    
+}
+
+
+@media screen and (max-height: 710px) and (max-width: 576px){
+
+    .download-cta{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-height: 704px) and (max-width: 576px){
+
+    .download-cta{
+        display: flex;
+    }
+    .profile{
+        padding: 10px 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    .track__author,
+    .music-folder,
+    .music-heart,
+    .desktop-btn,
+    .list-btn{
+        display: none;
+    }
+
+    .music-album{
+        flex-direction: column;
+    }
+
+    .music-box{
+        flex-basis: 70px;
+        padding-right: 0;
+    }
+
+    .volume-wrapper {
+        flex-basis: 100px;
+    }
+}

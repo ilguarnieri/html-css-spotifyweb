@@ -279,6 +279,8 @@ button{
     white-space: nowrap;
     flex-wrap: wrap;
     padding-top: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav-active{
@@ -325,7 +327,7 @@ button{
 
 .catalog__list{
     margin-top: 30px;
-    column-gap: 1%;
+    gap: 10px 1%;
     justify-content: space-between;
 }
 
@@ -343,10 +345,12 @@ button{
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .card-img img{
     display: block;
+    min-width: 100%;
 }
 
 .circle-img{
@@ -354,7 +358,7 @@ button{
 }
 
 .card__title{
-    font-size: calc(1vw + 2px);
+    font-size: calc(0.5vw + 10px);
     margin-bottom: 10px;
     line-height: 1.1em;
     cursor: pointer;
@@ -365,7 +369,7 @@ button{
 }
 
 .card__subtitle{
-    font-size: calc(0.8vw + 1px);
+    font-size: calc(0.4vw + 8px);
     color: #7d7f84;
     cursor: pointer;
 }
@@ -381,7 +385,7 @@ button{
     height: 100%;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: max(60px, 4vw);
     background-color: rgba(0,0,0,0.5);
     animation: play_music 1s linear infinite;
     opacity: 0;
@@ -590,6 +594,7 @@ button{
 }
 
 .volume-wrapper i{
+    font-size: 13px;
     transition: color 200ms linear;
 }
 
