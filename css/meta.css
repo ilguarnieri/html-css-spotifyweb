@@ -1,9 +1,0 @@
-@media screen and (max-width: 510px){
-    .catalog__list{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .card-wrapper{
-        width: 23%;
-    }
-}
