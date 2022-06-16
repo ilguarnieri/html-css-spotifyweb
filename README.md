@@ -23,4 +23,4 @@ Cʀᴇᴀᴛᴇ ꜱᴩᴏᴛɪꜰʏ ᴡᴇʙ ᴀᴩᴩ - ᴅᴇꜱᴋᴛᴏᴩ, 
 
 
 ## 👨‍💻 Authors
-- [@ilguarnieri](https://github.com/ilguarnieri)
+- [@ilguarnieri](https://www.flowcode.com/page/ilguarnieri)
