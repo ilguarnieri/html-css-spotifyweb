@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/app.css">       
+        <link rel="icon" href="img/favicon.ico">
+        <title>Spotify</title>
+    </head>
+
+    <body>
+
+        <!-- MAIN WRAPPER -->
+        <div class="main-wrapper flex">
+
+            <!-- SIDEBAR -->
+            <nav class="sidebar-menu flex-col">
+
+                <!-- LOGO -->
+                <div class="logo-wrapper">
+                    <figure>
+                        <img src="img/logo.svg" class="logo-big" alt="logo">
+                        <img src="img/logo-small.svg" class="logo-small" alt="logo">
+                    </figure>
+                </div>
+
+                <!-- MAIN BAR -->                
+                <ul class="main-bar" >
+                    <!-- HOME -->
+                    <li class="main__item flex home__desktop active">
+                        <a href="#">
+                            <img src="img/home.svg" alt="home">
+                            <p class="main__item__name">Home</p>
+                        </a>
+                    </li>
+                    <!-- HOME Mobile-->
+                    <li class="main__item home__mobile">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <!-- SEARCH -->
+                    <li class="main__item flex main__search">
+                        <a href="#">
+                            <img src="img/search.svg" alt="search">
+                            <p class="main__item__name">Cerca</p>
+                        </a>
+                    </li>
+                    <!-- LIBRARY -->
+                    <li class="main__item flex main__library">
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="library">
+                            <p class="main__item__name">La tua libreria</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- PLAYLIST -->
+                <div class="playlist-wrapper">
+                    <h3 class="playlist__title">Playlist</h3>
+
+                    <div class="playlist__btn flex">
+                        <i class="fas fa-plus-square add-icon"></i>
+                        Crea Playlist
+                    </div>
+
+                    <ul class="playlist__list">
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                    </ul>
+                </div>
+
+                <!-- INSTALL -->
+                <button class="download-cta flex">
+                    <img src="img/download.svg" alt="download">
+                    <p class="download-cta__name">Installa app</p>
+                </button>
+
+                <!-- USER -->
+                <div class="profile flex">
+                    <img src="img/user.jpeg" alt="user">
+                    <p class="profile__name">Angelo Guarnieri</p>
+                </div>
+            </nav>
+
+            <!-- MAIN -->
+            <main class="main-content flex-col">                
+                
+                <div class="music-wrapper flex-col">
+
+                    <!-- UPGRADE -->
+                    <div class="upgrade-banner flex">
+                        <button class="upgrade-btn">
+                            Effettua l'upgrade
+                        </button>
+                    </div>
+
+                    <!-- NAV BAR -->
+                    <div class="categories-menu">
+                        <ul class="nav-bar flex">
+                            <li class="nav__home nav-active">
+                                <a href="#">
+                                    In evidenza
+                                </a>
+                            </li>
+                            <li class="nav__podcast">
+                                <a href="#">
+                                    Podcast
+                                </a>
+                            </li>
+                            <li class="nav__rank">
+                                <a href="#">
+                                    Classifiche
+                                </a>
+                            </li>
+                            <li class="nav__mood">
+                                <a href="#">
+                                    Generi e mood
+                                </a>
+                            </li>
+                            <li class="nav__newsong">
+                                <a href="#">
+                                    Nuove uscite
+                                </a>
+                            </li>
+                            <li class="nav__discover">
+                                <a href="#">
+                                    Scopri
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- RECENTLY CATALOG -->
+                    <div class="catalog-wrapper">
+                        <!-- TITLE -->
+                        <h3 class="catalog__title">Recently played</h3>
+                        <!-- LIST -->
+                        <div class="catalog__list flex">
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </figure>
+                                <h4 class="card__title">Heavy Metal</h4>
+                                <p class="card__subtitle">Subtitle</p>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/stranger.jpeg" alt="stranger">
+                                </figure>
+                                <h4 class="card__title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                                <p class="card__subtitle">Kyle Dixon & Michael Stein</p>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/aquietplace.jpeg" alt="aquietplace">
+                                </figure>
+                                <h4 class="card__title">A quiet place</h4>
+                                <p class="card__subtitle">Subtitle</p>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/split.jpeg" alt="split">
+                                </figure>
+                                <h4 class="card__title">Split</h4>
+                                <p class="card__subtitle">Subtitle</p>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/cure.jpeg" alt="cure">
+                                </figure>
+                                <h4 class="card__title">A cure for wellness</h4>
+                                <p class="card__subtitle">Subtitle</p>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/sinister.jpeg" alt="sinister">
+                                </figure>
+                                <h4 class="card__title">Sinister</h4>
+                                <p class="card__subtitle">Subtitle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CREATE CATALOG -->
+                    <div class="catalog-wrapper catalog__create">
+                        <!-- TITLE -->
+                        <h3 class="catalog__title">Creato per Angelo Guarnieri</h3>
+                        <!-- SUBTITLE -->
+                        <h5 class="catalog__subtitle">Più ascolti, più accurati saranno i suggerimenti.</h5>
+                        <!-- LIST -->
+                        <div class="catalog__list flex">
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/radar.jpeg" alt="radar">
+                                </figure>
+                                <h4 class="card__title">Release Radar</h4>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/mixdaily.jpeg" alt="mix">
+                                </figure>
+                                <h4 class="card__title">Daily Mix 1</h4>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- ARTIST CATALOG -->
+                    <div class="catalog-wrapper catalog__artist">
+                        <!-- TITLE -->
+                        <h3 class="catalog__title">Artisti più popolari</h3>
+                        <!-- SUBTITLE -->
+                        <h5 class="catalog__subtitle">Più ascolti, più accurati saranno i suggerimenti.</h5>
+                        <!-- LIST -->
+                        <div class="catalog__list flex">
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img circle-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/youg.jpeg" alt="young">
+                                </figure>
+                                <h4 class="card__title">Lana Del Rey</h4>
+                            </div>
+                            <!-- CARD -->
+                            <div class="card-wrapper">
+                                <figure class="card-img circle-img">
+                                    <div class="card-overlay flex"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/einaudi.jpeg" alt="einaudi">
+                                </figure>
+                                <h4 class="card__title">Ludovico Einaudi</h4>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- TOOLBAR -->
+        <div class="toolbar flex">
+
+            <!-- MUSIC SONG -->
+            <div class="music-box flex">
+
+                <div class="music-album flex">
+                    <!-- IMG -->
+                    <figure class="album__thumb">
+                        <img src="img/theblaze.jfif" alt="song_play">
+                    </figure>                    
+                    <!-- NAME -->
+                    <div class="album__info">
+                        <h4 class="track__title">Territory</h4>
+                        <p class="track__author">The Blaze</p>  
+                    </div>
+                </div>
+    
+                <!-- LIKE -->
+                <div class="music-control flex">
+                    <i class="fas fa-heart music-heart"></i>
+                    <i class="far fa-folder music-folder"></i>
+                </div>
+            </div>
+
+            <!-- PLAY BAR -->
+            <div class="play-wrapper flex-col">
+                <!-- PLAY BUTTON -->
+                <ul class="play-bar flex">
+                    <li class="btn-random">
+                        <a href="#">
+                            <i class="fas fa-random"></i>
+                        </a>
+                    </li>
+                    <li class="btn-back">
+                         <a href="#">
+                            <i class="fas fa-step-backward"></i>
+                        </a>
+                     </li>
+                    <li class="btn-play">
+                         <a href="#">
+                            <i class="far fa-play-circle"></i>
+                         </a>
+                    </li>
+                    <li class="btn-next">
+                         <a href="#">
+                           <i class="fas fa-step-forward"></i>
+                        </a>
+                    </li>
+                    <li class="btn-repeat">
+                        <a href="#">
+                            <i class="fas fa-redo-alt"></i>
+                        </a>
+                    </li>                    
+                </ul>
+
+                <!-- STEP TRACK -->
+                <div class="step-track flex">
+                    <!-- START -->
+                    <div class="track-start">
+                        0:00
+                    </div>
+
+                    <!-- PROGRESS BAR -->
+                    <div class="track-bar">
+                        <div class="progress-bar song_bar">
+
+                        </div>
+                    </div>
+
+                    <!-- END -->
+                    <div class="track-end">
+                        4:36
+                    </div>
+                 </div>
+            </div>
+
+            <!-- VOLUME -->
+            <ul class="volume-wrapper flex">
+                <li class="list-btn">
+                    <a href="#">
+                        <i class="fas fa-list"></i>
+                    </a>
+                </li>
+                <li class="desktop-btn">
+                    <a href="#">
+                        <i class="fas fa-desktop"></i>
+                    </a>
+                </li>
+                <li class="volume-btn">
+                    <a href="#">
+                        <i class="fas fa-volume-up"></i>
+                    </a>
+                </li>
+                <li class="track-bar">
+                    <div class="progress-bar livel_vol">
+                    </div>                    
+                </li>
+            </ul>
+        
+        </div>        
+    </body>
+</html>
